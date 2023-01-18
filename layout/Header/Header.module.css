@@ -1,0 +1,28 @@
+.header {
+  padding: 20px 80px;
+  display: grid;
+  grid-template-columns: auto 1fr minmax(197px, 230px);
+  column-gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+
+}
+
+.link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.download {
+
+}

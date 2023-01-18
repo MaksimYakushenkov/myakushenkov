@@ -1,0 +1,15 @@
+{
+	"extends": 
+		"stylelint-config-standard",
+  "ignoreFiles": ["out/_next/static/css/*.css"],
+	"rules": {
+    "selector-class-pattern": [
+      "([a-z][a-zA-Z0-9]*)([a-zA-Z0-9]+)*$",
+      {}
+    ],
+		"indentation": [
+			"tab"
+		],
+		"color-hex-case": "upper"
+	}
+}
