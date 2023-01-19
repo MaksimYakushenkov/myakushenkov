@@ -1,14 +1,22 @@
 .header {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-auto-rows: auto 1fr;
+  align-items: end;
+}
+
+.nav {
   padding: 20px 80px;
   display: grid;
-  grid-template-columns: auto 1fr minmax(197px, 230px);
+  grid-template-columns: auto 1fr auto;
   column-gap: 40px;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-
+  margin-right: 96px;
 }
 
 .link {
@@ -24,5 +32,37 @@
 }
 
 .download {
+  padding: 18px 45px;
+}
 
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+.description {
+  width: 845px;
+  margin-bottom: 160px;
+  margin-left: 80px;
+}
+
+.description p {
+  width: 617px;
+}
+
+.avatar {
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px, rgba(143, 255, 0, 0.1) 0px 8px 24px, rgba(143, 255, 0, 0.1) 0px 16px 48px;
+}
+
+.avatar:hover {
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(143, 255, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+.title {
+  margin-bottom: 40px!important;
 }

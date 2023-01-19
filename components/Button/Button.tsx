@@ -18,7 +18,7 @@ export const Button = ({ appearance, arrow = false, children, className, ...prop
         {...props}
         >
             {children}
-            {arrow != undefined && <ArrowIcon className={styles.arrow} />}
+            {arrow && <ArrowIcon className={styles.arrow} />}
             
         </motion.button>
     );

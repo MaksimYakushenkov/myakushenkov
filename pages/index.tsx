@@ -5,7 +5,6 @@ function Home(): JSX.Element {
 
   return (
     <>
-    <h1>sdas</h1>
     </>
   );
 }
