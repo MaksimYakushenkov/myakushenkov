@@ -1,0 +1,22 @@
+.point {
+  text-align: center;
+  display: inline-block;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--gray);
+}
+
+.count {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 100%;
+}
+
+.count::after {
+  content: '+';
+  display: inline-block;
+  color: var(--lime);
+}

@@ -1,0 +1,29 @@
+.portfolio {
+  background: #0B0B0B;
+  padding-top: 63px;
+}
+
+.colored {
+  color: var(--orange);
+}
+
+.header {
+  width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 217px;
+}
+
+.button {
+  padding: 20px 0;
+  width: 197px;
+  margin-top: 16px;
+}
+
+.works {
+  margin: 100px auto 78px;
+}
+
+.sticker {
+  background: var(--lime);
+}

@@ -16,6 +16,7 @@
 
 .body {
 	grid-area: body;
+  overflow: hidden;
 }
 
 .footer {

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 140 160" stroke="white" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M139 40.9979L70.6667 1L2 40.5L70.6667 80L139 40.9979Z" />
+<path d="M2 119.113V41L70.5602 80.3704L139 41.3324V119.777L70.0012 159L2 119.113Z" />
+<path d="M71 80L70 159" />
+<path d="M71.2137 1L71 79.8158L139 119"  stroke-opacity="0.25"/>
+<path d="M2 119L71 80"  stroke-opacity="0.25"/>
+</svg>
