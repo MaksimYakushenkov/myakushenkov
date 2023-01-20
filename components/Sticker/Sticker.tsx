@@ -5,7 +5,7 @@ import cn from 'classnames';
 export const Sticker = ({ stickers, className }: StickerProps): JSX.Element => {
   return (
     <div className={cn(className, styles.sticker)}>
-      {stickers && stickers.map((sticker => <span key={sticker}>{sticker}</span>))}
+      {stickers && stickers.map((sticker, index) => <span key={index}>{sticker}</span>)}
     </div>
   );
 };

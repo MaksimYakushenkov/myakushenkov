@@ -1,10 +1,11 @@
+import { GetStaticProps } from 'next';
 import { useState } from 'react';
 import { Portfolio, Services } from '../components';
 import { About } from '../components/About/About';
 import { Stickers } from '../components/Stickers/Stickers';
 import { withLayout } from '../layout/Layout';
 
-function Home(): JSX.Element {
+function Home(windowSize): JSX.Element {
 
   return (
     <>
@@ -18,19 +19,16 @@ function Home(): JSX.Element {
 
 export default withLayout(Home);
 
-// export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-//   const firstCategory = 0;
-//   const { data: menu } = await axios.post<MenuItem[]>(API.topPage.find, {
-//     firstCategory
-//   });
-//   return {
-//     props: {
-//       menu,
-//       firstCategory,
-//     }
-//   };
-// };
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const windowSize = 0;
+ 
+  return {
+    props: {
+      windowSize: windowSize,
+    }
+  };
+};
 
 interface HomeProps extends Record<string, unknown> {
-
+  windowSize: number;
 }

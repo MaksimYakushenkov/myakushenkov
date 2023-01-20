@@ -9,7 +9,7 @@ import DownloadIcon from '../../helpers/icons/download.svg';
 import Avatar from '../../helpers/icons/maksim_yakushenkov_web_developer.webp';
 import { Htag, Ptag } from '../../components';
 
-export const Header = ({className, ...props }: HeaderProps): JSX.Element => {
+export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
     return(
         <header className={cn(styles.header, className)} {...props}>
           <div className={styles.nav}>

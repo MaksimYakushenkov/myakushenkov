@@ -27,3 +27,12 @@
 .sticker {
   background: var(--lime);
 }
+.latestProjects__slider {
+  max-width: 1280px;
+  display: flex;
+}
+.test1 {
+  width: 200px;
+  height: 150px;
+  background-color: red;
+}
