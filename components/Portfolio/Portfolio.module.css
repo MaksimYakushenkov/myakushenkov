@@ -31,8 +31,48 @@
   max-width: 1280px;
   display: flex;
 }
-.test1 {
-  width: 200px;
-  height: 150px;
-  background-color: red;
+
+.stickers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.works {
+  display: flex;
+  gap: 30px;
+  flex: none;
+  width: 100%;
+  height: 220px;
+  flex-flow: row nowrap;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  flex-grow: 1;
+  flex-basis:0;
+  scroll-snap-type: x mandatory;
+	scroll-padding: 1rem;
+}
+
+.work {
+  flex: 1 0 520px;
+  height: 200px;
+  background-color: var(--lime);
+  scroll-snap-align: center;
+}
+
+.active {
+	scroll-snap-type: unset;
+}
+
+.works::-webkit-scrollbar {
+    opacity: 0;
+}
+
+.works::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(182, 171, 171, 0.3);
+    background-color: #555;
 }
