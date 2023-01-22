@@ -6,6 +6,10 @@ import { Ptag } from "../Ptag/Ptag";
 import { Sticker } from "../Sticker/Sticker";
 import { stickers } from "../../helpers/helpers";
 import { useInnerWidth } from "../../hooks/hooks";
+import Image from 'next/image';
+import Image1 from '../../helpers/icons/Image1.png';
+import Image2 from '../../helpers/icons/Image2.png';
+import Link from "next/link";
 
 export const Portfolio = ({ className }: PortfolioProps): JSX.Element => {
   const w = useInnerWidth();
@@ -24,7 +28,7 @@ export const Portfolio = ({ className }: PortfolioProps): JSX.Element => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - e.currentTarget.offsetLeft;
-    const SCROLL_SPEED = 3;
+    const SCROLL_SPEED = 1;
     const walk = (x - startX) * SCROLL_SPEED;
     e.currentTarget.scrollLeft = scrollLeft - walk;
   };
@@ -57,12 +61,31 @@ export const Portfolio = ({ className }: PortfolioProps): JSX.Element => {
       onMouseMove={(e) => mouseMove(e)}
       onMouseUp={(e) => mouseUp(e)}
       onMouseLeave={(e) => mouseLeave(e)}
-      
       >
-        <div className={styles.work}>h1</div>
-        <div className={styles.work}>h2</div>
-        <div className={styles.work}>h3</div>
-        <div className={styles.work}>h3</div>
+        <div className={styles.work}>
+          <Image src={Image1} alt='test'/>
+          <div className={styles.workDescription}>
+            <Link href='#' className={styles.link}>Название работы может быть длинное Название работы может быть длинное</Link>
+          </div>
+        </div>
+        <div className={styles.work}>
+          <Image src={Image2} alt='test'/>
+          <div className={styles.workDescription}>
+            <Link href='#' className={styles.link}>Название работы может быть длинное</Link>
+          </div>
+        </div>
+        <div className={styles.work}>
+          <Image src={Image2} alt='test'/>
+          <div className={styles.workDescription}>
+            <Link href='#' className={styles.link}>Название работы может быть длинное</Link>
+          </div>
+        </div>
+        <div className={styles.work}>
+          <Image src={Image1} alt='test'/>
+          <div className={styles.workDescription}>
+            <Link href='#' className={styles.link}>Название работы может быть длинное Название работы может быть длинное</Link>
+          </div>
+        </div>
       </div>
       <div className={styles.stickers}>
       <Sticker stickers={stickers} className={styles.sticker} />

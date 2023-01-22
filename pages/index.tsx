@@ -1,11 +1,10 @@
 import { GetStaticProps } from 'next';
-import { useState } from 'react';
-import { Portfolio, Services } from '../components';
+import { Collab, Portfolio, Services } from '../components';
 import { About } from '../components/About/About';
 import { Stickers } from '../components/Stickers/Stickers';
 import { withLayout } from '../layout/Layout';
 
-function Home(windowSize): JSX.Element {
+function Home(): JSX.Element {
 
   return (
     <>
@@ -13,6 +12,7 @@ function Home(windowSize): JSX.Element {
     <Stickers />
     <Services />
     <Portfolio />
+    <Collab />
     </>
   );
 }

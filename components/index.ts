@@ -6,3 +6,5 @@ export * from './Point/Point';
 export * from './Services/Services';
 export * from './Stickers/Stickers';
 export * from './Portfolio/Portfolio';
+export * from './Collab/Collab';
+export * from './Divider/Divider';

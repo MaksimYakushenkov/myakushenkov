@@ -1,0 +1,42 @@
+.collab {
+  margin-top: 168px;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.colored {
+  color: var(--orange);
+}
+
+.header {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 110%;
+}
+
+.description {
+  width: 100%;
+  max-width: 760px;
+}
+
+.cv {
+  padding: 18px 45px;
+  border: none;
+  color: var(--black);
+}
+
+.cv svg {
+  fill: var(--black);
+}
+
+.hire {
+  padding: 18px 45px;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 24px;
+}
