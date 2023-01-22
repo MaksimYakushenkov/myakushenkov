@@ -1,13 +1,13 @@
 .paragraph {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
 }
 
 .white {
-  color: var(--white);
+	color: var(--white);
 }
 
 .light {
-  color: var(--gray);
+	color: var(--gray);
 }

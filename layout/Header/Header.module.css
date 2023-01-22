@@ -1,68 +1,67 @@
 .header {
-  position: relative;
-  height: 100vh;
-  display: grid;
-  grid-auto-rows: auto 1fr;
-  align-items: end;
+	position: relative;
+	height: 100vh;
+	display: grid;
+	grid-auto-rows: auto 1fr;
+	align-items: end;
 }
 
 .nav {
-  padding: 20px 80px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  column-gap: 40px;
-  align-items: center;
-  justify-content: space-between;
+	padding: 20px 80px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	column-gap: 40px;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .logo {
-  margin-right: 96px;
+	margin-right: 96px;
 }
 
 .link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-decoration: none;
 }
 
 .link:hover {
-  cursor: pointer;
-  text-decoration: underline;
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 .download {
-  padding: 18px 45px;
+	padding: 18px 45px;
 }
 
 .menu {
-  display: flex;
-  gap: 24px;
+	display: flex;
+	gap: 24px;
 }
 
 .description {
-  width: 845px;
-  margin-bottom: 160px;
-  margin-left: 80px;
+	width: 845px;
+	margin-bottom: 160px;
+	margin-left: 80px;
 }
 
 .description p {
-  width: 617px;
+	width: 617px;
 }
 
 .avatar {
-  border-radius: 50%;
-  position: absolute;
-  top: 15%;
-  right: 15%;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px, rgba(143, 255, 0, 0.1) 0px 8px 24px, rgba(143, 255, 0, 0.1) 0px 16px 48px;
+	border-radius: 50%;
+	position: absolute;
+	top: 15%;
+	right: 15%;
+	box-shadow: rgb(255 255 255 / 10%) 0 1px 0, rgb(143 255 0 / 10%) 0 8px 24px, rgb(143 255 0 / 10%) 0 16px 48px;
 }
 
 .avatar:hover {
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(143, 255, 0, 0.3) 0px 30px 60px -30px;
+	box-shadow: rgb(255 255 255 / 25%) 0 50px 100px -20px, rgb(143 255 0 / 30%) 0 30px 60px -30px;
 }
 
-
 .title {
-  margin-bottom: 40px!important;
+	margin-bottom: 40px !important;
 }

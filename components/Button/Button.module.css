@@ -1,23 +1,23 @@
 .button {
-  border: 2px solid #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items:flex-end;
-  gap: 8px;
-  box-sizing: border-box;
+	border: 2px solid #FFF;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 8px;
+	box-sizing: border-box;
 	font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 14px;
-  color: var(--white);
-  cursor: pointer;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 14px;
+	color: var(--white);
+	cursor: pointer;
 }
 
 .lime {
-  background: var(--lime);
+	background: var(--lime);
 }
 
 .ghost {
-  background: none;
+	background: none;
 }

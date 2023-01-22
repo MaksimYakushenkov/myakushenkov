@@ -1,14 +1,12 @@
-
-
 :root {
 	--black: #000;
-  --black-light: #1E1E1E;
+	--black-light: #1E1E1E;
 	--white: #FFF;
 	--gray: #8D8D8D;
 	--gray-light: #EBEBEB;
 	--gray-dark: #787D85;
-  --lime: #8FFF00;
-  --orange: #fff500;
+	--lime: #8FFF00;
+	--orange: #FFF500;
 	--red: #FC836D;
 	--red-light: #FDCCC4;
 	--green: #1DC37E;
@@ -20,8 +18,8 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-  scrollbar-width: thin;
-  scrollbar-color: #555 rgba(255, 255, 255, 0);
+	scrollbar-width: thin;
+	scrollbar-color: #555 rgb(255 255 255 / 0%);
 }
 
 html,
@@ -34,24 +32,21 @@ body {
 }
 
 *::-webkit-scrollbar {
-  width: 6px; 
-  height: 2px;
+	width: 6px;
+	height: 2px;
 }
 
 *::-webkit-scrollbar-track {
-  background: rgb(255, 255, 255, 0);        /* цвет дорожки */
+	background: rgb(255 255 255 / 0%);        /* цвет дорожки */
 }
+
 *::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(182, 171, 171, 0.3);
-  background-color: #555;
-  border-radius: 10px;
+	box-shadow: inset 0 0 6px rgb(182 171 171 / 30%);
+	background-color: #555;
+	border-radius: 10px;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
-}
-* {
-  min-height: 0;
-  min-width: 0;
 }
