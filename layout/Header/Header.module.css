@@ -15,8 +15,29 @@
 	justify-content: space-between;
 }
 
-.logo {
+.contacts {
 	margin-right: 96px;
+}
+
+.contacts svg {
+  fill: var(--lime);
+  padding: 20px;
+  
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  padding: 8px;
+  box-sizing: content-box;
+  border-radius: 8px;
+}
+
+.contacts svg:hover {
+  fill: var(--black-light);
+  background: var(--lime);
+}
+
+.tg {
+  margin-right: 24px;
 }
 
 .link {
@@ -34,6 +55,14 @@
 .download {
 	padding: 18px 45px;
 }
+
+.download a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 8px;
+}
+
 
 .menu {
 	display: flex;

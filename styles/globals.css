@@ -11,7 +11,7 @@
 	--red-light: #FDCCC4;
 	--green: #1DC37E;
 	--green-light: #C8F8E4;
-	--font-family: "Roboto", "Montserrat", sans-serif;
+	--font-family: "Rubik", "Noto Sans", "Roboto", "Montserrat", sans-serif;
 }
 
 * {
@@ -29,6 +29,7 @@ body {
 	color: var(--white);
 	background: var(--black);
 	font-family: var(--font-family);
+  scroll-padding-top: 20px;
 }
 
 *::-webkit-scrollbar {

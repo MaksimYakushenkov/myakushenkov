@@ -1,4 +1,3 @@
-import { GetStaticProps } from 'next';
 import { Collab, Portfolio, Services } from '../components';
 import { About } from '../components/About/About';
 import { Stickers } from '../components/Stickers/Stickers';
@@ -19,16 +18,4 @@ function Home(): JSX.Element {
 
 export default withLayout(Home);
 
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const windowSize = 0;
- 
-  return {
-    props: {
-      windowSize: windowSize,
-    }
-  };
-};
-
-interface HomeProps extends Record<string, unknown> {
-  windowSize: number;
-}
+interface HomeProps extends Record<string, unknown> { }

@@ -6,14 +6,15 @@ import { Point } from "../Point/Point";
 import { Ptag } from "../Ptag/Ptag";
 import { points } from '../../helpers/helpers';
 import CoubeIcon from '../../helpers/icons/coube.svg';
+import cn from 'classnames';
 
-export const About = ({ children, className }: AboutProps): JSX.Element => {
+export const About = ({ className }: AboutProps): JSX.Element => {
   return (
-    <div className={styles.about}>
+    <div className={cn(styles.about, className)} id='about'>
       <div className={styles.title}>
         <Htag tag='h4' className={styles.colored}>Обо мне</Htag>
         <Htag tag='h2' >Я могу добиться результатов, которые превзойдут ваши ожидания.</Htag>
-        <Button appearance='ghost' arrow={true} className={styles.hire}>Предложить оффер</Button>
+        <Button appearance='ghost' arrow={true} className={styles.hire}><a href='https://t.me/yakushenkovm' target='_blank'>Предложить оффер</a></Button>
       </div>
       <CoubeIcon className={styles.bigCoube}/>
       <CoubeIcon className={styles.smallCoube}/>

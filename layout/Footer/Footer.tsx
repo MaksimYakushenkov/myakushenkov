@@ -1,6 +1,5 @@
 import { FooterProps } from './Footer.props';
 import styles from './Footer.module.css';
-import LogoIcon from '../logo.svg';
 import cn from 'classnames';
 import { Ptag } from '../../components';
 import { format } from 'date-fns';

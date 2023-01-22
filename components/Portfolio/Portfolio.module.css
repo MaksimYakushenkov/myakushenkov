@@ -10,8 +10,8 @@
 .header {
 	width: 1280px;
 	margin: 0 auto;
-	display: grid;
 	grid-template-columns: auto 217px;
+	display: grid;
 }
 
 .button {

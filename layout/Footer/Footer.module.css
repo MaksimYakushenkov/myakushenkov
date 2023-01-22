@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: [start] 1fr [middle] auto [end];
 	grid-template-rows: [start] auto [middle] auto [end];
-	margin-top: 90px;
+	margin-top: 168px;
 	padding: 0 80px 33px;
 }
 
