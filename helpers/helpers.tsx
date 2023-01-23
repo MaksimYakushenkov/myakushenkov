@@ -1,15 +1,15 @@
 export const points = [
   {
-    title: 'Project Complete',
-    count: 312
+    title: 'Проектов',
+    count: 43
   },
   {
-    title: 'World Clients',
-    count: 281
+    title: 'Клиентов',
+    count: 83
   },
   {
-    title: 'Years Experience',
-    count: 10
+    title: 'Лет опыта',
+    count: 5
   }
 ];
 

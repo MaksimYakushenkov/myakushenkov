@@ -1,10 +1,10 @@
 .collab {
-  margin: 168px 80px 0;
+	margin: 168px 80px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-  position: relative;
+	position: relative;
 }
 
 .colored {
@@ -17,7 +17,8 @@
 	line-height: 110%;
 }
 
-.description, .hr {
+.description,
+.hr {
 	width: 100%;
 	max-width: 760px;
 }
@@ -29,10 +30,10 @@
 }
 
 .cv a {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 8px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 8px;
 }
 
 .cv svg {
@@ -49,14 +50,14 @@
 }
 
 .bigCoube {
-  width: 93px;
-  right: 50px;
-  top: 0;
+	width: 93px;
+	right: 50px;
+	top: 0;
 }
 
 .smallCoube {
-  width: 48px;
-  left: 100px;
-  bottom: 50px;
-  transform: rotate(-60deg);
+	width: 48px;
+	left: 100px;
+	bottom: 50px;
+	transform: rotate(-60deg);
 }

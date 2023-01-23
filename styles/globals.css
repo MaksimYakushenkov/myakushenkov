@@ -29,7 +29,7 @@ body {
 	color: var(--white);
 	background: var(--black);
 	font-family: var(--font-family);
-  scroll-padding-top: 20px;
+	scroll-padding-top: 20px;
 }
 
 *::-webkit-scrollbar {

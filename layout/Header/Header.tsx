@@ -29,7 +29,7 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
           <div className={styles.description}>
             <Htag tag='h1' className={styles.title}>Максим Якушенков</Htag>
             <Ptag color='light'>Привет! Меня зовут Максим. Я веб-разработчик. Добро пожаловать на мой личный сайт! :)</Ptag>
-            <Image src={Avatar} alt="Picture of the author" width={300} height={300} className={styles.avatar} />
+            <Image src={Avatar} alt="Picture of the author" className={styles.avatar} />
           </div>
           
         </header>

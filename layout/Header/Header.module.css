@@ -1,6 +1,6 @@
 .header {
 	position: relative;
-	height: 100vh;
+	min-height: 760px;
 	display: grid;
 	grid-auto-rows: auto 1fr;
 	align-items: end;
@@ -20,24 +20,23 @@
 }
 
 .contacts svg {
-  fill: var(--lime);
-  padding: 20px;
-  
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  padding: 8px;
-  box-sizing: content-box;
-  border-radius: 8px;
+	fill: var(--lime);
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	padding: 8px;
+	box-sizing: content-box;
+	border-radius: 8px;
+  transition: all 0.3s;
 }
 
 .contacts svg:hover {
-  fill: var(--black-light);
-  background: var(--lime);
+	fill: var(--black-light);
+	background: var(--lime);
 }
 
 .tg {
-  margin-right: 24px;
+	margin-right: 24px;
 }
 
 .link {
@@ -45,11 +44,12 @@
 	font-size: 16px;
 	line-height: 20px;
 	text-decoration: none;
+  transition: all 0.3s;
 }
 
 .link:hover {
 	cursor: pointer;
-	text-decoration: underline;
+  opacity: 0.6;
 }
 
 .download {
@@ -57,12 +57,18 @@
 }
 
 .download a {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 8px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 8px;
 }
 
+.download:hover,
+.download:hover svg {
+	fill: var(--lime);
+	border-color: var(--lime);
+	color: var(--lime);
+}
 
 .menu {
 	display: flex;
@@ -73,16 +79,19 @@
 	width: 845px;
 	margin-bottom: 160px;
 	margin-left: 80px;
+	margin-top: 201px;
 }
 
-.description p {
+.description .paragraph {
 	width: 617px;
 }
 
 .avatar {
+	width: 25%;
+	height: auto;
 	border-radius: 50%;
 	position: absolute;
-	top: 15%;
+	top: 12%;
 	right: 15%;
 	box-shadow: rgb(255 255 255 / 10%) 0 1px 0, rgb(143 255 0 / 10%) 0 8px 24px, rgb(143 255 0 / 10%) 0 16px 48px;
 }
