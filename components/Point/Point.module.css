@@ -1,22 +1,22 @@
 .point {
-	text-align: center;
-	display: inline-block;
+  display: inline-block;
+  text-align: center;
 }
 
 .title {
-	font-size: 16px;
-	line-height: 20px;
-	color: var(--gray);
+  color: var(--gray);
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .count {
-	font-weight: 500;
-	font-size: 56px;
-	line-height: 100%;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 100%;
 }
 
 .count::after {
-	content: "+";
-	display: inline-block;
-	color: var(--lime);
+  display: inline-block;
+  color: var(--lime);
+  content: "+";
 }

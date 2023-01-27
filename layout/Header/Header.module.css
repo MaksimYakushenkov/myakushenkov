@@ -1,105 +1,129 @@
 .header {
-	position: relative;
-	min-height: 760px;
-	display: grid;
-	grid-auto-rows: auto 1fr;
-	align-items: end;
+  position: relative;
+  display: grid;
+  grid-auto-rows: auto 1fr;
+  align-items: end;
+  max-width: 1280px;
+  min-height: 760px;
+  margin: 0 auto;
 }
 
 .nav {
-	padding: 20px 80px;
-	display: grid;
-	grid-template-columns: auto 1fr auto;
-	column-gap: 40px;
-	align-items: center;
-	justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  column-gap: 40px;
 }
 
 .contacts {
-	margin-right: 96px;
+  margin-right: 96px;
 }
 
 .contacts svg {
-	fill: var(--lime);
-	width: 30px;
-	height: 30px;
-	display: inline-block;
-	padding: 8px;
-	box-sizing: content-box;
-	border-radius: 8px;
+  display: inline-block;
+  box-sizing: content-box;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  border-radius: 8px;
   transition: all 0.3s;
+  fill: var(--lime);
 }
 
 .contacts svg:hover {
-	fill: var(--black-light);
-	background: var(--lime);
+  background: var(--lime);
+  fill: var(--black-light);
 }
 
 .tg {
-	margin-right: 24px;
+  margin-right: 24px;
 }
 
 .link {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 20px;
-	text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
   transition: all 0.3s;
 }
 
 .link:hover {
-	cursor: pointer;
+  cursor: pointer;
   opacity: 0.6;
 }
 
 .download {
-	padding: 18px 45px;
+  padding: 18px 45px;
 }
 
 .download a {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	gap: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-end;
 }
 
 .download:hover,
 .download:hover svg {
-	fill: var(--lime);
-	border-color: var(--lime);
-	color: var(--lime);
+  color: var(--lime);
+  border-color: var(--lime);
+  fill: var(--lime);
 }
 
 .menu {
-	display: flex;
-	gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .description {
-	width: 845px;
-	margin-bottom: 160px;
-	margin-left: 80px;
-	margin-top: 201px;
+  display: grid;
+  grid-template-rows: min(600px);
+  grid-template-columns: minmax(auto, 845px) auto;
+  justify-content: space-between;
+  margin: 0 auto 130px;
+  padding: 0 20px;
+}
+
+.container {
+  align-self: end;
 }
 
 .description .paragraph {
-	width: 617px;
+  width: 617px;
 }
 
 .avatar {
-	width: 25%;
-	height: auto;
-	border-radius: 50%;
-	position: absolute;
-	top: 12%;
-	right: 15%;
-	box-shadow: rgb(255 255 255 / 10%) 0 1px 0, rgb(143 255 0 / 10%) 0 8px 24px, rgb(143 255 0 / 10%) 0 16px 48px;
+  width: 400px;
+  height: auto;
+  margin-top: 60px;
+  margin-right: 40px;
+  border-radius: 50%;
+  box-shadow: rgb(255 255 255 / 10%) 0 1px 0, rgb(143 255 0 / 10%) 0 8px 24px,
+    rgb(143 255 0 / 10%) 0 16px 48px;
 }
 
 .avatar:hover {
-	box-shadow: rgb(255 255 255 / 25%) 0 50px 100px -20px, rgb(143 255 0 / 30%) 0 30px 60px -30px;
+  box-shadow: rgb(255 255 255 / 25%) 0 50px 100px -20px,
+    rgb(143 255 0 / 30%) 0 30px 60px -30px;
 }
 
 .title {
-	margin-bottom: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .header {
+    max-width: 1024px;
+  }
+
+  .nav {
+    grid-template-columns: repeat(3, auto);
+    padding: 20px 40px;
+  }
+
+  .download {
+    padding: 12px 30px;
+  }
 }

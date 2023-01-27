@@ -18,7 +18,7 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "custom.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "custom.d.ts", "**/*.ts", "**/*.tsx", "components/Work/Work.props.ts"],
   "exclude": ["node_modules"],
   "files": [
     "custom.d.ts"

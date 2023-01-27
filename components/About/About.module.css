@@ -1,55 +1,60 @@
 .about {
-	position: relative;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr) / repeat(2, auto);
-	grid-template-areas:
-		"title ."
-		". description";
-	gap: 86px 0;
-	padding: 0 80px;
-	justify-items: end;
+  position: relative;
+  display: grid;
+  grid-gap: 30px 0;
+  grid-template: repeat(2, auto) / repeat(2, 1fr);
+  grid-template-areas:
+    "title ."
+    ". description";
+  justify-items: end;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .colored {
-	color: var(--orange);
-	margin-bottom: 8px;
+  margin-bottom: 8px;
+  color: var(--orange);
 }
 
 .title {
-	max-width: 737px;
-	grid-area: title;
+  grid-area: title;
+  max-width: 737px;
 }
 
 .description {
-	grid-area: description;
+  grid-area: description;
 }
 
 .hire {
-	padding: 20px 35px;
-	margin-top: 40px;
+  -moz-max-width: fit-content;
+  -webkit-max-width: -webkit--fit-content;
+  max-width: fit-content;
+  margin-top: 40px;
+  padding: 20px 35px;
 }
 
 .points {
-	display: grid;
-	grid-template-columns: repeat(3, auto);
-	gap: 42px;
-	justify-content: start;
-	margin-top: 32px;
-	margin-bottom: 13px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 42px;
+  justify-content: start;
+  margin-top: 32px;
+  margin-bottom: 13px;
 }
 
 .bigCoube {
-	justify-self: flex-end;
-	width: 137px;
+  justify-self: flex-end;
+  width: 137px;
 }
 
 .smallCoube svg {
-	width: 98px;
+  width: 98px;
 }
 
 .smallCoube {
-	position: absolute;
-	left: -18px;
-	bottom: 0;
-	width: 98px;
+  position: absolute;
+  bottom: 0;
+  left: -18px;
+  width: 98px;
 }

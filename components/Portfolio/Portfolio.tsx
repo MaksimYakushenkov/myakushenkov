@@ -1,47 +1,16 @@
 import { PortfolioProps } from "./Portfolio.props";
 import styles from './Portfolio.module.css';
 import cn from 'classnames';
-import { Button, Htag } from "../index";
+import { ButtonLink, Htag } from "../index";
 import { Ptag } from "../Ptag/Ptag";
 import { Sticker } from "../Sticker/Sticker";
-import { stickers } from "../../helpers/helpers";
-import Image from 'next/image';
-import Image1 from '../../helpers/icons/Image1.png';
-import Image2 from '../../helpers/icons/Image2.png';
+import { portfolios, stickers } from "../../helpers/helpers";
 import Link from "next/link";
+import { Carousel } from "../Carousel/Carousel";
+import { Work } from "../Work/Work";
 
 export const Portfolio = ({ className }: PortfolioProps): JSX.Element => {
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  const mouseDown = (e) => {
-    e.currentTarget.classList.add(styles.active);
-    isDown = true;
-    startX = e.pageX - e.currentTarget.offsetLeft;
-    scrollLeft = e.currentTarget.scrollLeft;
-  };
-
-  const mouseMove = (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - e.currentTarget.offsetLeft;
-    const SCROLL_SPEED = 1;
-    const walk = (x - startX) * SCROLL_SPEED;
-    e.currentTarget.scrollLeft = scrollLeft - walk;
-  };
-
-  const mouseUp = (e) => {
-    isDown = false;
-    e.currentTarget.classList.remove(styles.active);
-  };
-
-  const mouseLeave = (e) => {
-    isDown = false;
-    e.currentTarget.classList.remove(styles.active);
-  };
-
-
+  
   return (
     <div className={cn(styles.portfolio, className)} id='works'>
       <div className={styles.header}>
@@ -50,41 +19,15 @@ export const Portfolio = ({ className }: PortfolioProps): JSX.Element => {
           <Htag tag='h2'>Лучшие работы <br/>2020 - 2023</Htag>
         </div>
         <div>
-          <Ptag>Check out more portfolios I've worked on</Ptag>
-          <Button appearance='ghost' arrow={true} className={styles.button}>Посмотреть все</Button>
+          <Ptag>Ознакомьтесь с полным списком моих работ здесь:</Ptag>
+          <ButtonLink appearance='ghost' arrow={true} className={styles.button} href='https://github.com/MaksimYakushenkov' target='_blank'>Посмотреть все</ButtonLink>
         </div>
       </div>
-      <div className={styles.works}
-      onMouseDown={(e) => mouseDown(e)}
-      onMouseMove={(e) => mouseMove(e)}
-      onMouseUp={(e) => mouseUp(e)}
-      onMouseLeave={(e) => mouseLeave(e)}
-      >
-        <div className={styles.work}>
-          <Image src={Image1} alt='test'/>
-          <div className={styles.workDescription}>
-            <Link href='#' className={styles.link}>Название работы может быть длинное Название работы может быть длинное</Link>
-          </div>
-        </div>
-        <div className={styles.work}>
-          <Image src={Image2} alt='test'/>
-          <div className={styles.workDescription}>
-            <Link href='#' className={styles.link}>Название работы может быть длинное</Link>
-          </div>
-        </div>
-        <div className={styles.work}>
-          <Image src={Image2} alt='test'/>
-          <div className={styles.workDescription}>
-            <Link href='#' className={styles.link}>Название работы может быть длинное</Link>
-          </div>
-        </div>
-        <div className={styles.work}>
-          <Image src={Image1} alt='test'/>
-          <div className={styles.workDescription}>
-            <Link href='#' className={styles.link}>Название работы может быть длинное Название работы может быть длинное</Link>
-          </div>
-        </div>
-      </div>
+      <Carousel className={styles.works}>
+        {portfolios.map((portfolio => 
+          <Work key={portfolio.link} title={portfolio.title} link={portfolio.link} src={portfolio.image} />
+        ))}
+      </Carousel>
       <div className={styles.stickers}>
       <Sticker stickers={stickers} className={styles.sticker} />
 

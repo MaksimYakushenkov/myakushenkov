@@ -1,97 +1,99 @@
 .services {
-	padding: 0 80px;
-	position: relative;
-	width: 1440px;
-	margin: 168px auto;
+  position: relative;
+  width: 1280px;
+  margin: 168px auto;
+  padding: 0 20px;
 }
 
 .colored {
-	color: var(--orange);
+  color: var(--orange);
 }
 
 .frontend {
-	margin-top: 130px;
-	display: grid;
-	grid-template-columns: [start] auto [middle] max(700px) [end];
-	grid-template-rows: auto auto auto;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: [start] auto [middle] max(700px) [end];
+  margin-top: 130px;
 }
 
 .header {
-	grid-column: start / end;
-	justify-self: flex-start;
+  grid-column: start / end;
+  justify-self: flex-start;
 }
 
 .header span,
 .headerBackend span {
-	margin-right: 5px;
-	color: var(--lime);
+  margin-right: 5px;
+  color: var(--lime);
 }
 
 .description {
-	grid-column: middle / end;
-	justify-self: flex-end;
-	margin: 32px 0 40px;
+  grid-column: middle / end;
+  justify-self: flex-end;
+  margin: 32px 0 40px;
 }
 
 .list {
-	grid-column: start / end;
-	border-spacing: 0;
+  grid-column: start / end;
+  border-spacing: 0;
 }
 
 .list td {
-	border-width: 2px 2px 2px 0;
-	border-style: solid;
-	border-color: #8D8D8D;
-	padding: 50px 60px;
-	text-align: center;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 23px;
+  padding: 50px 60px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  border-color: #8d8d8d;
+  border-style: solid;
+  border-width: 2px 2px 2px 0;
 }
 
 .list td:first-child {
-	border-left: 2px solid var(--gray);
+  border-left: 2px solid var(--gray);
 }
 
 .bigCoube {
-	width: 137px;
-	position: absolute;
-	top: 138px;
-	right: 80px;
+  position: absolute;
+  top: 8%;
+  right: 80px;
+  width: 137px;
 }
 
 .smallCoube {
-	position: absolute;
-	width: 40px;
-	right: 229px;
-	top: 259px;
+  position: absolute;
+  top: 20%;
+  right: 229px;
+  width: 40px;
 }
 
 .backend {
-	position: relative;
-	margin-top: 96px;
-	display: grid;
-	grid-template-columns: [start] auto [middle] max(700px) [middleend] auto [end] / repeat(3, auto);
-	align-items: center;
-	grid-template-areas:
-		". header ."
-		". description ."
-		". list .";
-	text-align: center;
+  position: relative;
+  display: grid;
+  grid-template:
+    repeat(3, auto)
+    / [start] auto [middle] max(700px) [middleend] auto [end];
+  grid-template-areas:
+    ". header ."
+    ". description ."
+    ". list .";
+  align-items: center;
+  margin-top: 96px;
+  text-align: center;
 }
 
 .headerBackend {
-	grid-area: header;
+  grid-area: header;
 }
 
 .descriptionBackend {
-	grid-area: description;
-	margin: 32px 0 40px;
+  grid-area: description;
+  margin: 32px 0 40px;
 }
 
 .thirdCoube {
-	position: absolute;
-	width: 38px;
-	left: -20px;
-	top: 21px;
+  position: absolute;
+  top: 21px;
+  left: -20px;
+  width: 38px;
 }

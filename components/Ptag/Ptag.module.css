@@ -1,18 +1,18 @@
 .paragraph {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 150%;
-	margin-top: 24px;
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 .paragraph:first-child {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .white {
-	color: var(--white);
+  color: var(--white);
 }
 
 .light {
-	color: var(--gray);
+  color: var(--gray);
 }

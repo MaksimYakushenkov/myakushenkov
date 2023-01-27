@@ -1,63 +1,65 @@
 .collab {
-	margin: 168px 80px 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1280px;
+  margin: 168px auto 0;
+  text-align: center;
 }
 
 .colored {
-	color: var(--orange);
+  color: var(--orange);
 }
 
 .header {
-	font-weight: 500;
-	font-size: 80px;
-	line-height: 110%;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
 }
 
 .description,
 .hr {
-	width: 100%;
-	max-width: 760px;
+  width: 100%;
+  max-width: 760px;
 }
 
 .cv {
-	padding: 18px 45px;
-	border: none;
-	color: var(--black);
+  padding: 18px 45px;
+  color: var(--black);
+  border: none;
 }
 
 .cv a {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	gap: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
 }
 
 .cv svg {
-	fill: var(--black);
+  fill: var(--black);
 }
 
 .hire {
-	padding: 18px 45px;
+  padding: 18px 45px;
 }
 
 .buttonsContainer {
-	display: flex;
-	gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .bigCoube {
-	width: 93px;
-	right: 50px;
-	top: 0;
+  top: 0;
+  right: 50px;
+  width: 93px;
 }
 
 .smallCoube {
-	width: 48px;
-	left: 100px;
-	bottom: 50px;
-	transform: rotate(-60deg);
+  bottom: 50px;
+  left: 100px;
+  width: 48px;
+  transform: rotate(-60deg);
 }

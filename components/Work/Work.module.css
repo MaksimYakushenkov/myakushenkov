@@ -1,0 +1,33 @@
+.work {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  height: auto;
+  background: var(--black-light);
+  cursor: pointer;
+  scroll-snap-align: center;
+}
+
+.work img {
+  pointer-events: none;
+}
+
+.workDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 650px;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.workDescription:hover {
+  text-decoration: underline;
+}

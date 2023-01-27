@@ -1,53 +1,54 @@
 :root {
-	--black: #000;
-	--black-light: #1E1E1E;
-	--white: #FFF;
-	--gray: #8D8D8D;
-	--gray-light: #EBEBEB;
-	--gray-dark: #787D85;
-	--lime: #8FFF00;
-	--orange: #FFF500;
-	--red: #FC836D;
-	--red-light: #FDCCC4;
-	--green: #1DC37E;
-	--green-light: #C8F8E4;
-	--font-family: "Rubik", "Noto Sans", "Roboto", "Montserrat", sans-serif;
+  --black: #000;
+  --black-light: #1e1e1e;
+  --white: #fff;
+  --gray: #8d8d8d;
+  --gray-light: #ebebeb;
+  --gray-dark: #787d85;
+  --lime: #8fff00;
+  --orange: #fff500;
+  --red: #fc836d;
+  --red-light: #fdccc4;
+  --green: #1dc37e;
+  --green-light: #c8f8e4;
+  --font-family: "IBM Plex Mono", monospace, "Rubik", "Noto Sans", "Roboto",
+    "Montserrat", sans-serif;
 }
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	scrollbar-width: thin;
-	scrollbar-color: #555 rgb(255 255 255 / 0%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #555 rgb(255 255 255 / 0%);
 }
 
 html,
 body {
-	overflow-x: hidden;
-	max-width: 100vw;
-	color: var(--white);
-	background: var(--black);
-	font-family: var(--font-family);
-	scroll-padding-top: 20px;
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: var(--white);
+  font-family: var(--font-family);
+  background: var(--black);
+  scroll-padding-top: 20px;
 }
 
 *::-webkit-scrollbar {
-	width: 6px;
-	height: 2px;
+  width: 6px;
+  height: 0;
 }
 
 *::-webkit-scrollbar-track {
-	background: rgb(255 255 255 / 0%);        /* цвет дорожки */
+  background: rgb(255 255 255 / 0%); /* цвет дорожки */
 }
 
 *::-webkit-scrollbar-thumb {
-	box-shadow: inset 0 0 6px rgb(182 171 171 / 30%);
-	background-color: #555;
-	border-radius: 10px;
+  background-color: #555;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgb(182 171 171 / 30%);
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  color: inherit;
+  text-decoration: none;
 }

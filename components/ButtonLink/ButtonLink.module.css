@@ -1,0 +1,29 @@
+.wrapper {
+  -moz-max-width: fit-content;
+  -webkit-max-width: -webkit--fit-content;
+  max-width: fit-content;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--font-family);
+  line-height: 14px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.lime {
+  background: var(--lime);
+}
+
+.ghost {
+  background: none;
+}
