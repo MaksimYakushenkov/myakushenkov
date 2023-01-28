@@ -42,3 +42,19 @@
   gap: 30px;
   margin: 100px auto 78px;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .header {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    width: 768px;
+  }
+
+  .button {
+    padding: 15px 20px;
+  }
+}

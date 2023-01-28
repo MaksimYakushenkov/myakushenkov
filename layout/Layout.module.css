@@ -32,6 +32,12 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .wrapper {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 765px) {
   .wrapper {
     grid-template-areas:

@@ -36,3 +36,56 @@
 .links li:last-child {
   margin-bottom: 0;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    max-width: 768px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .links li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .footer {
+    grid-template-rows: [start] auto [linksend] auto [decriptionend] auto [end];
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+    max-width: 480px;
+    margin: 100px auto 33px;
+    text-align: center;
+  }
+
+  .description {
+    grid-row: linksend / decriptionend;
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .copyright {
+    grid-row: decriptionend / end;
+    grid-column: auto;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    grid-row: start / linksend;
+    grid-column: auto;
+    gap: 30px;
+  }
+}

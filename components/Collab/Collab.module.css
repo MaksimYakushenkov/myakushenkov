@@ -63,3 +63,40 @@
   width: 48px;
   transform: rotate(-60deg);
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .collab {
+    max-width: 1024px;
+    margin: 100px auto;
+  }
+
+  .bigCoube {
+    right: 20px;
+  }
+
+  .smallCoube {
+    left: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .collab {
+    width: 768px;
+  }
+
+  .bigCoube {
+    top: -20%;
+    right: 50px;
+    width: 50px;
+  }
+
+  .smallCoube {
+    left: 70px;
+    width: 24px;
+  }
+
+  .cv,
+  .hire {
+    padding: 15px 35px;
+  }
+}

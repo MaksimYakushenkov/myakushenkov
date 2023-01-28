@@ -58,3 +58,27 @@
   left: -18px;
   width: 98px;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .about {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about {
+    max-width: 768px;
+  }
+
+  .title {
+    max-width: 100%;
+  }
+
+  .description {
+    max-width: 400px;
+  }
+
+  .points {
+    justify-content: center;
+  }
+}
