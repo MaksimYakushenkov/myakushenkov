@@ -58,3 +58,36 @@
     padding: 15px 20px;
   }
 }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .header {
+    grid-template: 1fr auto / 1fr;
+    gap: 45px;
+    width: 100%;
+  }
+
+  .description div {
+    margin: 0 auto;
+  }
+
+  .works {
+    margin: 50px auto 78px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .header {
+    grid-template: 1fr auto / 1fr;
+    gap: 45px;
+    width: 100%;
+  }
+
+  .description div {
+    margin: 0 auto;
+  }
+
+  .works {
+    gap: 10px;
+    margin: 50px auto 78px;
+  }
+}

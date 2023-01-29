@@ -18,7 +18,7 @@ export const Portfolio = ({ className }: PortfolioProps): JSX.Element => {
           <Htag tag='h4' className={styles.colored}>Портфолио</Htag>
           <Htag tag='h2'>Лучшие работы <br/>2020 - 2023</Htag>
         </div>
-        <div>
+        <div className={styles.description}>
           <Ptag>Ознакомьтесь с полным списком моих работ здесь:</Ptag>
           <ButtonLink appearance='ghost' arrow={true} className={styles.button} href='https://github.com/MaksimYakushenkov' target='_blank'>Посмотреть все</ButtonLink>
         </div>
@@ -29,8 +29,7 @@ export const Portfolio = ({ className }: PortfolioProps): JSX.Element => {
         ))}
       </Carousel>
       <div className={styles.stickers}>
-      <Sticker stickers={stickers} className={styles.sticker} />
-
+        <Sticker stickers={stickers} className={styles.sticker} />
       </div>
     </div>
   );

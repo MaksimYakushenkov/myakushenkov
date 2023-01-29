@@ -43,3 +43,24 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .work img {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .work img {
+    width: 280px;
+    height: auto;
+  }
+
+  .workDescription {
+    width: 280px;
+    min-height: 72px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

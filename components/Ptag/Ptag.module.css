@@ -22,3 +22,15 @@
     font-size: 14px;
   }
 }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .paragraph {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .paragraph {
+    font-size: 14px;
+  }
+}

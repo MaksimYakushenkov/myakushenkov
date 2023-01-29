@@ -143,3 +143,131 @@
     border-width: 2px 2px 2px 0;
   }
 }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .services {
+    width: 100%;
+    max-width: 767px;
+    margin: 50px auto;
+  }
+
+  .frontend {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: [start] 1fr [end];
+    margin-top: 100px;
+  }
+
+  .description {
+    grid-column: start / end;
+  }
+
+  .list tr {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .list td {
+    border-color: #8d8d8d;
+    border-style: solid;
+    border-width: 2px 2px 0;
+  }
+
+  .list td:last-child {
+    border-bottom: 2px solid var(--gray);
+  }
+
+  .backend {
+    grid-template: auto auto auto / [start] 1fr auto auto [end];
+    grid-template-areas:
+      "header header header"
+      "description description description"
+      "thirdcoube bigcoube smallcoube ";
+    margin-top: 100px;
+  }
+
+  .bigCoube {
+    right: 20px;
+    grid-area: bigcoube;
+    width: 70px;
+  }
+
+  .smallCoube {
+    top: 213px;
+    right: 75px;
+    grid-area: smallcoube;
+    width: 30px;
+  }
+
+  .thirdCoube {
+    top: auto;
+    bottom: -40px;
+    grid-area: thirdcoube;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .services {
+    width: 100%;
+    max-width: 767px;
+    margin: 50px auto;
+  }
+
+  .frontend {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: [start] 1fr [end];
+    margin-top: 80px;
+  }
+
+  .description {
+    grid-column: start / end;
+  }
+
+  .list tr {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .list td {
+    border-color: #8d8d8d;
+    border-style: solid;
+    border-width: 2px 2px 0;
+  }
+
+  .list td:last-child {
+    border-bottom: 2px solid var(--gray);
+  }
+
+  .backend {
+    grid-template: auto auto auto / [start] 1fr auto auto [end];
+    grid-template-areas:
+      "header header header"
+      "description description description"
+      "thirdcoube bigcoube smallcoube ";
+    margin-top: 80px;
+  }
+
+  .bigCoube {
+    top: 3%;
+    right: 2%;
+    grid-area: bigcoube;
+    width: 50px;
+  }
+
+  .smallCoube {
+    top: 100px;
+    right: 48px;
+    grid-area: smallcoube;
+    width: 20px;
+  }
+
+  .thirdCoube {
+    top: auto;
+    bottom: -50px;
+    left: -30px;
+    grid-area: thirdcoube;
+  }
+}

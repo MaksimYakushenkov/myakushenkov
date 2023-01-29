@@ -113,6 +113,19 @@
   margin-bottom: 40px !important;
 }
 
+.mobileMenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  color: var(--black-light);
+  font-weight: bold;
+  background: var(--lime);
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .header {
     max-width: 1024px;
@@ -143,6 +156,15 @@
     display: none;
   }
 
+  .mobileMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
   .nav {
     grid-template-columns: repeat(2, auto);
     padding: 20px 40px;
@@ -164,6 +186,13 @@
   .title {
     text-align: center;
   }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -184,9 +213,108 @@
   }
 }
 
-/* @media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  .avatar {
+    margin: 60px auto 0;
+  }
+
+  .contacts {
+    margin-right: 0;
+  }
+
+  .download {
+    padding: 12px 30px;
+  }
+
+  .description {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .container {
+    align-self: center;
+  }
+
+  .mobileMenu {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
 }
+
 @media (min-width: 480px) and (max-width: 767px) {
+  .header {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .mobileMenu {
+    padding: 10px 20px;
+  }
+
+  .mobileMenu svg {
+    width: 30px;
+    height: 30px;
+  }
 }
+
 @media (min-width: 320px) and (max-width: 479px) {
-} */
+  .header {
+    width: 100%;
+    max-width: 479px;
+    min-height: auto;
+  }
+
+  .nav {
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .contacts {
+    margin-right: 0;
+  }
+
+  .contacts svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tg {
+    margin-right: 12px;
+  }
+
+  .avatar {
+    width: 100%;
+  }
+
+  .container {
+    align-self: start;
+    margin-top: 50px;
+  }
+
+  .description {
+    grid-template-rows: [start] 1fr [middle] auto [end];
+  }
+
+  .mobileMenu {
+    padding: 10px;
+  }
+
+  .mobileMenu svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .link {
+    font-size: 10px;
+  }
+}

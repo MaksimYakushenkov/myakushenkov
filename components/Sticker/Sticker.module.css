@@ -18,3 +18,33 @@
   margin-left: 13px;
   content: "•";
 }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .sticker {
+    gap: 5px;
+    padding: 12px 0;
+  }
+
+  .sticker span {
+    font-size: 20px;
+  }
+
+  .sticker span::after {
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .sticker {
+    gap: 5px;
+    padding: 12px 0;
+  }
+
+  .sticker span {
+    font-size: 20px;
+  }
+
+  .sticker span::after {
+    margin-left: 5px;
+  }
+}

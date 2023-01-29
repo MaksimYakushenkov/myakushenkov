@@ -19,7 +19,8 @@ export const About = ({ className }: AboutProps): JSX.Element => {
       </div>
       <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 0.6, width: 'auto' }}
+      whileInView={{ opacity: 0.6}}
+      className={styles.bigCoubeContainer}
       >
         <CoubeIcon className={styles.bigCoube}/>
       </motion.div>
