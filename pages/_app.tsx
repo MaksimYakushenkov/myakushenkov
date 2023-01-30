@@ -16,11 +16,12 @@ export default function App({ Component, pageProps, router }: AppProps): JSX.Ele
   return <>
   <Head>
     <title>Максим Якушенков | Веб-разработчик</title>
-    <meta name="description" content="Первое некст джиес" />
+    <meta name="description" content="Меня зовут Максим, я веб-разработчик с опытом работы 3+ лет. Нахожусь в поисках работы на позицию full stack web-developer / middle web-developer. Уверен, что смогу усилить вашу компанию, ведь мне нравится работать над интересными и значимыми проектами, которыми я могу гордиться, и я всегда стремлюсь создавать чистые, адаптивные интерфейсы, которые плавно анимируются." />
+    <meta name="keywords" content="веб-разработчик, web-developer, resume, cv, web, react, next, резюме, поиск работы" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://mc.yandex.ru"/>
     <link rel="icon" href="/favicon.ico" />
-    <meta property='og:url' content={process.env.NEXT_PUBLIC_DOMAIN + router.asPath} />
+    <meta property='og:url' content='https://myakushenkov.ru/' />
     <meta property='og:locale' content='ru_RU' />
   </Head>
   <YMInitializer

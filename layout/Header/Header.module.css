@@ -178,9 +178,12 @@
   }
 
   .avatar {
-    grid-row: start / middle;
     width: 100%;
     max-width: 320px;
+  }
+
+  .avatrPicture {
+    grid-row: start / middle;
   }
 
   .title {

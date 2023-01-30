@@ -6,5 +6,5 @@ export interface ImageType extends DetailedHTMLProps<ImgHTMLAttributes<HTMLImage
 export interface Portfolio extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   title: string;
   link: string;
-  src: ImageType;
+  src: string;
 }

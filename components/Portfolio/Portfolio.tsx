@@ -5,7 +5,6 @@ import { ButtonLink, Htag } from "../index";
 import { Ptag } from "../Ptag/Ptag";
 import { Sticker } from "../Sticker/Sticker";
 import { portfolios, stickers } from "../../helpers/helpers";
-import Link from "next/link";
 import { Carousel } from "../Carousel/Carousel";
 import { Work } from "../Work/Work";
 

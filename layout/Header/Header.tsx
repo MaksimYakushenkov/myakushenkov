@@ -1,5 +1,4 @@
 import { HeaderProps } from './Header.props';
-import Image from 'next/image';
 import styles from './Header.module.css';
 import cn from 'classnames';
 import Link from 'next/link';
@@ -10,7 +9,6 @@ import HomeIcon from '../../helpers/icons/home.svg';
 import AboutIcon from '../../helpers/icons/about.svg';
 import PortfolioIcon from '../../helpers/icons/portfolio.svg';
 import CollabIcon from '../../helpers/icons/collab.svg';
-import Avatar from '../../helpers/icons/maksim_yakushenkov_web_developer.webp';
 import { ButtonLink, Htag, Ptag } from '../../components';
 
 export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
@@ -34,7 +32,13 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
               <Htag tag='h1' className={styles.title}>Максим Якушенков</Htag>
               <Ptag color='light'>Привет! Меня зовут Максим. Я веб-разработчик. Добро пожаловать на мой личный сайт! :)</Ptag>
             </div>
-            <Image src={Avatar} alt="Picture of the author" className={styles.avatar} />
+            <picture className={styles.avatrPicture}>
+              <img
+              src='/images/maksim_yakushenkov_web_developer.webp'
+              alt="Picture of the author"
+              className={styles.avatar}
+            />
+            </picture>
           </div>
           <div className={styles.mobileMenu}>
               <Link href="/" className={styles.link}><HomeIcon />Домой</Link>

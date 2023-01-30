@@ -1,8 +1,3 @@
-import creativeEmpireImage from '../public/images/portfolios/creative_empire_small.webp';
-import astroImage from '../public/images/portfolios/astrosinkevich_small.webp';
-import taroImage from '../public/images/portfolios/taro_marina_small.webp';
-import mestoImage from '../public/images/portfolios/mesto_small.webp';
-
 export const points = [
   {
     title: 'Проектов',
@@ -14,7 +9,7 @@ export const points = [
   },
   {
     title: 'Лет опыта',
-    count: 5
+    count: 3
   }
 ];
 
@@ -41,21 +36,21 @@ export const portfolios = [
   {
     title: 'Digital-студия Creative Empire',
     link: 'https://creativempire.ru',
-    image: creativeEmpireImage,
+    image: '/images/portfolios/creative_empire_small.webp',
   },
   {
     title: 'Сайт таролога',
     link: 'https://taromarina.ru',
-    image: taroImage,
+    image: '/images/portfolios/taro_marina_small.webp',
   },
   {
     title: 'Сайт астролога',
     link: 'https://astrosinkevich.ru',
-    image: astroImage,
+    image: '/images/portfolios/astrosinkevich_small.webp',
   },
   {
     title: 'Место',
     link: 'https://github.com/MaksimYakushenkov/mesto-react',
-    image: mestoImage,
+    image: '/images/portfolios/mesto_small.webp',
   }
 ];
