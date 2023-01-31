@@ -39,6 +39,7 @@
 }
 
 .cv svg {
+  height: 18px;
   fill: var(--black);
 }
 
@@ -147,5 +148,11 @@
   .cv,
   .hire {
     padding: 18px 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 349px) {
+  .buttonsContainer {
+    flex-direction: column;
   }
 }

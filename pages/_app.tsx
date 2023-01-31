@@ -11,6 +11,7 @@ Router.events.on('routeChangeComplete', (url: string) => {
   }
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function App({ Component, pageProps, router }: AppProps): JSX.Element {
 
   return <>

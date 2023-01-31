@@ -18,4 +18,5 @@ function Home(): JSX.Element {
 
 export default withLayout(Home);
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface HomeProps extends Record<string, unknown> { }

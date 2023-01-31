@@ -251,14 +251,14 @@
   }
 
   .bigCoube {
-    top: 3%;
+    top: 90px;
     right: 2%;
     grid-area: bigcoube;
     width: 50px;
   }
 
   .smallCoube {
-    top: 100px;
+    top: 137px;
     right: 48px;
     grid-area: smallcoube;
     width: 20px;

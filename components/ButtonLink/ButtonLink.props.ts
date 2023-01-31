@@ -1,4 +1,4 @@
-import { AnchorHTMLAttributes, ButtonHTMLAttributes, DetailedHTMLFactory, DetailedHTMLProps, HTMLAttributes, LinkHTMLAttributes, ReactNode } from "react";
+import { AnchorHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 
 // extends для прокидывания атрибутов HTML-элемента
 export interface ButtonLinkProps extends DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> {
