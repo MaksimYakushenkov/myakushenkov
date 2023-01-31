@@ -27,7 +27,7 @@ export default function App({ Component, pageProps, router }: AppProps): JSX.Ele
     <meta property='og:image' content='https://myakushenkov.ru/OG_IMAGE.webp' />
   </Head>
   <YMInitializer
-    accounts={[]} //id счетиков
+    accounts={[92270100]} //id счетиков
     options={{ webvisor: false, defer: true }} // вкл/выкл вебвизор (нагрузка на сервер), defer - откладывем загрузку метрики
     version='2' // версия счетчика
   />
