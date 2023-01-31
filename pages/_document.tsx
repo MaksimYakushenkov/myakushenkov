@@ -16,9 +16,9 @@ export default function Document() {
         <NextScript />
         <YandexMetrika 
           yid={92270100}
-          clickmap={false}
-          trackLinks={false}
-          accurateTrackBounce={false}
+          clickmap={true}
+          trackLinks={true}
+          accurateTrackBounce={true}
           webvisor={false}
           />
       </body>
