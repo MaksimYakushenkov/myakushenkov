@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { Htag } from "../Htag/Htag";
 import { Divider } from "../Divider/Divider";
 import { ButtonLink } from "../ButtonLink/ButtonLink";
-import ProjectIcon from '../../helpers/icons/project2.svg';
+import ProjectIcon from '../../helpers/icons/project.svg';
 import { Coube } from "../Coube/Coube";
 
 export const Collab = ({ className }: CollabProps): JSX.Element => {
