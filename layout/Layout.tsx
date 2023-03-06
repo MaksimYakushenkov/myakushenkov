@@ -5,16 +5,22 @@ import { Header } from './Header/Header';
 import { Page } from './Page/Page';
 import { Footer } from './Footer/Footer';
 import { AppContextInterface, AppContextProvider } from '../context/app.context';
+import { HandleUp } from '../components/HandleUp/HandleUp';
+import { useScrollY } from '../hooks/hooks';
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
+  const yvalue = useScrollY();
     return(
-        <div className={styles.wrapper} >
-          <Header className={styles.header}/>
-          <Page className={styles.body}>
-            {children}
-          </Page>
-          <Footer className={styles.footer}/>
-        </div>
+        <>
+          <div className={styles.wrapper} >
+            <Header className={styles.header}/>
+            <Page className={styles.body}>
+              {children}
+            </Page>
+            <Footer className={styles.footer}/>
+          </div>
+          <HandleUp yvalue={yvalue} />
+        </>
     );
 };
 

@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { Htag } from "../Htag/Htag";
 import { Divider } from "../Divider/Divider";
 import { ButtonLink } from "../ButtonLink/ButtonLink";
-import DownloadIcon from '../../helpers/icons/download.svg';
+import ProjectIcon from '../../helpers/icons/project2.svg';
 import { Coube } from "../Coube/Coube";
 
 export const Collab = ({ className }: CollabProps): JSX.Element => {
@@ -16,7 +16,7 @@ export const Collab = ({ className }: CollabProps): JSX.Element => {
         </div>
         <Divider className={styles.hr} />
         <div className={styles.buttonsContainer}>
-          <ButtonLink appearance='lime' className={styles.cv} href='https://api.creativempire.ru/uploads/Yakushenkov_Maxim_web-developer_v3.pdf' target='_blank'><DownloadIcon />Скачать CV</ButtonLink>
+          <ButtonLink appearance='lime' className={styles.cv} href='https://t.me/yakushenkovm' target='_blank'><ProjectIcon />Заказать проект</ButtonLink>
           <ButtonLink appearance='ghost' arrow={true} className={styles.hire} href='mailto:maxim@yakushenkov.ru' target='_blank' >Написать</ButtonLink>
         </div>
         <Coube className={styles.bigCoube}/>

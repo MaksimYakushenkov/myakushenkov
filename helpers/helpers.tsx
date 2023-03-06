@@ -39,14 +39,19 @@ export const portfolios = [
     image: '/images/portfolios/creative_empire_small.webp',
   },
   {
-    title: 'Сайт таролога',
-    link: 'https://taromarina.ru',
-    image: '/images/portfolios/taro_marina_small.webp',
+    title: 'Сайт медицинской компании',
+    link: 'https://arnika-med.ru',
+    image: '/images/portfolios/arnikamed_small.webp',
   },
   {
     title: 'Сайт астролога',
     link: 'https://astrosinkevich.ru',
     image: '/images/portfolios/astrosinkevich_small.webp',
+  },
+  {
+    title: 'Сайт таролога',
+    link: 'https://taromarina.ru',
+    image: '/images/portfolios/taro_marina_small.webp',
   },
   {
     title: 'Место',

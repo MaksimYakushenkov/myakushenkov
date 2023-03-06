@@ -10,10 +10,10 @@
 
 .nav {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: repeat(3, auto);
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
+  padding: 20px;
   column-gap: 40px;
 }
 
@@ -100,13 +100,13 @@
   margin-top: 60px;
   margin-right: 40px;
   border-radius: 50%;
-  box-shadow: rgb(255 255 255 / 10%) 0 1px 0, rgb(143 255 0 / 10%) 0 8px 24px,
-    rgb(143 255 0 / 10%) 0 16px 48px;
+  transition: all 0.2s linear;
 }
 
 .avatar:hover {
-  box-shadow: rgb(255 255 255 / 25%) 0 50px 100px -20px,
-    rgb(143 255 0 / 30%) 0 30px 60px -30px;
+  border-radius: 30px;
+  box-shadow: rgb(255 255 255 / 10%) 0 1px 0, rgb(143 255 0 / 10%) 0 8px 24px,
+    rgb(143 255 0 / 10%) 0 16px 48px;
 }
 
 .title {

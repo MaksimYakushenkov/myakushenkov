@@ -25,12 +25,12 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
               <a href="#works" className={styles.link}>Портфолио</a>
               <a href="#collab" className={styles.link}>Сотрудничество</a>
             </div>
-            <ButtonLink appearance='ghost' arrow={false} className={styles.download} href='https://api.creativempire.ru/uploads/Yakushenkov_Maxim_web-developer_v3.pdf' target='_blank'><DownloadIcon />Скачать CV</ButtonLink>
+            <ButtonLink appearance='ghost' arrow={false} className={styles.download} href='/PriceList.pdf' target='_blank'><DownloadIcon />Прайс-лист</ButtonLink>
           </div>
           <div className={styles.description}>
             <div className={styles.container}>
               <Htag tag='h1' className={styles.title}>Максим Якушенков</Htag>
-              <Ptag color='light'>Привет! Меня зовут Максим. Я веб-разработчик. Добро пожаловать на мой личный сайт! :)</Ptag>
+              <Ptag color='light'>Привет! Меня зовут Максим. Я <b>Full Stack Web-Developer</b>. Добро пожаловать на мой личный сайт! :)</Ptag>
             </div>
             <picture className={styles.avatrPicture}>
               <img

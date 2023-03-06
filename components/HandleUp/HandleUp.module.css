@@ -1,0 +1,33 @@
+/* stylelint-disable prettier/prettier */
+.up {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 14px 10px;
+  background: var(--black-light);
+  border: 1px solid var(--lime);
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgb(143 255 0 / 10%);
+  cursor: pointer;
+}
+
+.up:hover {
+  background: var(--dark-blue);
+}
+
+.up svg {
+  fill: var(--lime);
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .up{
+    width: 45px;
+    height: 45px;
+  }
+}

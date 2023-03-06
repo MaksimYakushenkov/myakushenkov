@@ -10,7 +10,7 @@ import { socailLinks } from '../../helpers/helpers';
 export const Footer = ({className, ...props }: FooterProps): JSX.Element => {
     return(
         <footer className={cn(styles.footer, className)} {...props}>
-          <Ptag className={styles.description}>Веб-разработка помогает мне развиваться и насыщает мое тело жизненной энергией.</Ptag>
+          <Ptag className={styles.description}>Веб-разработка помогает мне ментально развиваться и насыщает жизненной энергией.</Ptag>
           <Ptag color='light' className={styles.copyright}>	
 &#169; Maxim Yakushenkov {format(new Date(), 'yyyy')}. Все права защищены.</Ptag>
           <ul className={styles.links}>

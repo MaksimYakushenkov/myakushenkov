@@ -25,11 +25,6 @@
   background: var(--lime);
 }
 
-.latestProjects__slider {
-  display: flex;
-  max-width: 1280px;
-}
-
 .stickers {
   position: relative;
   display: flex;
@@ -38,9 +33,10 @@
   overflow: hidden;
 }
 
-.works {
-  gap: 30px;
-  margin: 100px auto 78px;
+.slider {
+  max-width: 1280px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {

@@ -37,6 +37,11 @@
   margin-bottom: 0;
 }
 
+.links a:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .footer {
     margin-top: 50px;

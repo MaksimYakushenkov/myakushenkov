@@ -25,7 +25,7 @@ export const Services = ({ className }: ServicesProps): JSX.Element => {
         </div>
         <div className={styles.backend}>
           <Htag tag='h3' className={styles.headerBackend}><span>02.</span>Backend</Htag>
-          <Ptag color='light' className={styles.descriptionBackend}>Пишу собственное REST API, разворачиваю сервер, настраиваю и запускаю полноценный проект.</Ptag>
+          <Ptag color='light' className={styles.descriptionBackend}>Пишу собственное REST API, разворачиваю сервер, настраиваю и запускаю полноценный проект с собственной панелью управления.</Ptag>
           <table className={styles.list}>
             <thead>
             </thead>
