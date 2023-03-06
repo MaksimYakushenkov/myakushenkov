@@ -5,7 +5,6 @@ import { ButtonLink, Htag } from "../index";
 import { Ptag } from "../Ptag/Ptag";
 import { Sticker } from "../Sticker/Sticker";
 import { portfolios, stickers } from "../../helpers/helpers";
-import { Carousel } from "../Carousel/Carousel";
 import { Work } from "../Work/Work";
 
 /* --IMPORT SLIDER WITH STYLES */
@@ -13,7 +12,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useInnerWidth } from "../../hooks/hooks";
-import { createRef, useRef } from "react";
 
 export const Portfolio = ({ className }: PortfolioProps): JSX.Element => {
 
