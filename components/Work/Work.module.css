@@ -51,7 +51,7 @@
 
 @media (min-width: 320px) and (max-width: 479px) {
   .work {
-    margin: 0 5px;
+    margin: 10px;
   }
 
   .workDescription {
