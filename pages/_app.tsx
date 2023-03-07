@@ -25,6 +25,7 @@ export default function App({ Component, pageProps, router }: AppProps): JSX.Ele
     <meta property='og:url' content='https://myakushenkov.ru' />
     <meta property='og:locale' content='ru_RU' />
     <meta property='og:image' content='https://myakushenkov.ru/OG_IMAGE.webp' />
+    <meta name="yandex-verification" content="d440fe2320a7654c" />
   </Head>
   <YMInitializer
     accounts={[92270100]} //id счетиков
