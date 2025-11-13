@@ -7,7 +7,7 @@
     "dev": "next dev",
     "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
-    "start": "next start -p 3010",
+    "start": "next start -p 3013",
     "export": "next export",
     "lint": "next lint",
     "stylelint": "stylelint \"**/*.css\" --fix"
